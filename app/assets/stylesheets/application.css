@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+body{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/a3/50/1a/a3501a405be15a55db0247d2de2ba39b.jpg");
+  display: cover;
+}

@@ -1,0 +1,21 @@
+<div class="game-page">
+
+  <h2><strong>Welcome</strong></h2>
+  <h2><strong>The Game is on</strong></h2>
+  <p> Here is your grid:  </p>
+  <p>Your Grid -----<strong> <%= @grid.join("  ") %> </strong></p>
+
+
+  <p>"What's your best shot?"</p>
+
+
+  <form action="score" method="get">
+    <input type="hidden" name="start_time" value="<%= start_time = Time.now %>">
+    <label for="word">Please Create your word</label>
+    <input type="text" name="attempt">
+    <input type="hidden" name="grid" value="<%=@grid%>">
+    <button type="submit" class="butt">GO</button>
+
+  </form>
+</div>
+
